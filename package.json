@@ -1,0 +1,35 @@
+{
+  "name": "hapi-query-qs",
+  "version": "0.0.1",
+  "description": "Hapi Plugin to parse query Params in the qs format that acepts [] square brackets",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasputtim/hapi-query-qs.git"
+  },
+  "keywords": [
+    "hapi",
+    "query"
+  ],
+  "author": "Rasputtim <rasputtim@gmx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rasputtim/hapi-query-qs/issues"
+  },
+  "homepage": "https://github.com/rasputtim/hapi-query-qs",
+  "peerDependencies": {
+    "@hapi/joi": "^17.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "@hapi/hapi": "^19.0.4",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "@hapi/hoek": "^9.0.2"
+  }
+}
