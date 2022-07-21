@@ -3,9 +3,10 @@
 [![NPM version](https://badge.fury.io/js/hapi-query-filters.svg)](https://npm.org/package/hapi-query-qs)
 [![Downloads](http://img.shields.io/npm/dm/hapi-query-filters.svg)](https://npm.org/package/hapi-query-qs)
 
-The purpose of this plugin isparse the query parameters into a object that is accessible via `request.query.qs`.
+The purpose of this plugin is to parse the query parameters into a object that is accessible via `request.queryqs`.
 
-the onjetive is to allow 'brackets' '[]' in the querystring an permit the quind of query string parsed by the qs package:
+the objetive is to allow 'brackets' '[]' in the querystring and permit hapi too support the kind of query string parsed by the qs package:
+Examples: 
 
 // GET /search?`q=tobi+ferret`
 console.dir(req.query.q)
@@ -25,7 +26,17 @@ console.dir(req.query.shoe.type)
 console.dir(req.query.color)
 // => ['blue', 'black', 'red']
 
+# HOW TO USE THE PLUGIN?
 
+To use it you just have to register it.
+After registering it you will have a new object in the request and whenever you need to use the parameters received after the query mark of the url ('?') they will be available getting the query.qs value
+
+Ex:
+route handler: function (request, reply) { ... 
+
+const parsed_parameters = request.query.qs
+
+}
 
 # Registering the Plugin
 ```javascript
