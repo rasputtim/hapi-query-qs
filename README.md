@@ -106,9 +106,9 @@ server.route({
   method: 'GET',
   path: '/test',
   handler: function (request, reply) { ... },
-  config: {
+  options: {
       plugins: {
-      queryFilter: {
+      hapi-query-qs: {
         enabled: true,
         ignoredKey: ['count', 'offset'], // Array will be concatenated with the ignoredKeys set at register
         params: ['test_param'] // Array of request.params that will be put into filter object
